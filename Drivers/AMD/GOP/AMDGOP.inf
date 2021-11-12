@@ -1,0 +1,19 @@
+## @file
+#  AMD Graphics Controller Driver.
+#
+#  Copyright (C) 2021, Semihalf.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = AMDGOP
+  FILE_GUID                      = 6B741A61-4BBC-4389-AC00-09C4E633B96F
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.1
+
+[Binaries.AArch64]
+  PE32|AArch64/ARM64Gop_2_10.efi|*
+  PE32|AArch64/Arm64Gop_1_68.efi|*
